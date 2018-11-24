@@ -39,14 +39,20 @@ extension ImageAPI: TargetType{
     }
     
     public var task: Task {
-        let dict = [String: Any]()
-        
         switch self{
         case .image(let image):
-            let imageData = image.pngData()
-            debugPrint(imageData)
+            let imageData = image.jpegData(compressionQuality: 0.5)
+            print(imageData)
             //let imageAsString = String(data: imageData!, encoding: String.Encoding.utf8) as String!
-            let strBase64 = imageData!.base64EncodedString(options: .lineLength64Characters)
+            var strBase64 = imageData!.base64EncodedString(options: .init(rawValue: 0))
+            debugPrint(strBase64.count % 4)
+            debugPrint(strBase64)
+            /*let remainder = strBase64.count % 4
+            if remainder > 0 {
+                strBase64 = strBase64.padding(toLength: strBase64.count + 4 - remainder, withPad: "=", startingAt: 0)
+            }
+            debugPrint(strBase64)*/
+
             //debugPrint(imageAsString!)
             return .requestParameters(parameters: ["image" : strBase64], encoding: URLEncoding.default)
 
