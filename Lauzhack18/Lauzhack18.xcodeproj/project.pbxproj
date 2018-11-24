@@ -12,9 +12,18 @@
 		E2A5DB7D21A979CA00678A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A5DB7B21A979CA00678A20 /* Main.storyboard */; };
 		E2A5DB7F21A979CB00678A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A5DB7E21A979CB00678A20 /* Assets.xcassets */; };
 		E2A5DB8221A979CB00678A20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A5DB8021A979CB00678A20 /* LaunchScreen.storyboard */; };
+		E2A5DB8C21A97BD500678A20 /* ImageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB8B21A97BD500678A20 /* ImageAPI.swift */; };
+		E2A5DB8F21A97C6300678A20 /* MergeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB8E21A97C6300678A20 /* MergeDictionary.swift */; };
+		E2A5DB9121A97FA000678A20 /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB9021A97FA000678A20 /* RecipesTableViewController.swift */; };
+		E2A5DB9321A988D200678A20 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB9221A988D200678A20 /* Recipe.swift */; };
+		E2A5DB9A21A997CA00678A20 /* IBMCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB9921A997CA00678A20 /* IBMCloud.swift */; };
+		E8923FCAE2B3A433034E711D /* Pods_Lauzhack18.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24952CDBB3D3374635636BF5 /* Pods_Lauzhack18.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10145A3DF036C74094D1E3EE /* Pods-Lauzhack18.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lauzhack18.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lauzhack18/Pods-Lauzhack18.release.xcconfig"; sourceTree = "<group>"; };
+		1DEA9A0B50E0455DBB2A1273 /* Pods-Lauzhack18.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lauzhack18.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lauzhack18/Pods-Lauzhack18.debug.xcconfig"; sourceTree = "<group>"; };
+		24952CDBB3D3374635636BF5 /* Pods_Lauzhack18.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lauzhack18.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A5DB7421A979CA00678A20 /* Lauzhack18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lauzhack18.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A5DB7721A979CA00678A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2A5DB7921A979CA00678A20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,11 @@
 		E2A5DB7E21A979CB00678A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2A5DB8121A979CB00678A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2A5DB8321A979CB00678A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2A5DB8B21A97BD500678A20 /* ImageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPI.swift; sourceTree = "<group>"; };
+		E2A5DB8E21A97C6300678A20 /* MergeDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeDictionary.swift; sourceTree = "<group>"; };
+		E2A5DB9021A97FA000678A20 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
+		E2A5DB9221A988D200678A20 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		E2A5DB9921A997CA00678A20 /* IBMCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMCloud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8923FCAE2B3A433034E711D /* Pods_Lauzhack18.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		484EE307B713F050AF113AC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DEA9A0B50E0455DBB2A1273 /* Pods-Lauzhack18.debug.xcconfig */,
+				10145A3DF036C74094D1E3EE /* Pods-Lauzhack18.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F71F54E3E6316421D42E0E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24952CDBB3D3374635636BF5 /* Pods_Lauzhack18.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E2A5DB6B21A979CA00678A20 = {
 			isa = PBXGroup;
 			children = (
 				E2A5DB7621A979CA00678A20 /* Lauzhack18 */,
 				E2A5DB7521A979CA00678A20 /* Products */,
+				484EE307B713F050AF113AC5 /* Pods */,
+				4F71F54E3E6316421D42E0E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +88,59 @@
 		E2A5DB7621A979CA00678A20 /* Lauzhack18 */ = {
 			isa = PBXGroup;
 			children = (
+				E2A5DB8321A979CB00678A20 /* Info.plist */,
+				E2A5DB9821A9890F00678A20 /* Models */,
+				E2A5DB9621A9890300678A20 /* Network */,
+				E2A5DB9521A988F800678A20 /* Views */,
+				E2A5DB9421A988DF00678A20 /* Common */,
+				E2A5DB8D21A97BF200678A20 /* Helpers */,
+			);
+			path = Lauzhack18;
+			sourceTree = "<group>";
+		};
+		E2A5DB8D21A97BF200678A20 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E2A5DB8E21A97C6300678A20 /* MergeDictionary.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E2A5DB9421A988DF00678A20 /* Common */ = {
+			isa = PBXGroup;
+			children = (
 				E2A5DB7721A979CA00678A20 /* AppDelegate.swift */,
-				E2A5DB7921A979CA00678A20 /* ViewController.swift */,
 				E2A5DB7B21A979CA00678A20 /* Main.storyboard */,
 				E2A5DB7E21A979CB00678A20 /* Assets.xcassets */,
 				E2A5DB8021A979CB00678A20 /* LaunchScreen.storyboard */,
-				E2A5DB8321A979CB00678A20 /* Info.plist */,
 			);
-			path = Lauzhack18;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E2A5DB9521A988F800678A20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2A5DB7921A979CA00678A20 /* ViewController.swift */,
+				E2A5DB9021A97FA000678A20 /* RecipesTableViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E2A5DB9621A9890300678A20 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E2A5DB8B21A97BD500678A20 /* ImageAPI.swift */,
+				E2A5DB9921A997CA00678A20 /* IBMCloud.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E2A5DB9821A9890F00678A20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2A5DB9221A988D200678A20 /* Recipe.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2A5DB8621A979CB00678A20 /* Build configuration list for PBXNativeTarget "Lauzhack18" */;
 			buildPhases = (
+				41063D9A1DDF4E80F34BF9E7 /* [CP] Check Pods Manifest.lock */,
 				E2A5DB7021A979CA00678A20 /* Sources */,
 				E2A5DB7121A979CA00678A20 /* Frameworks */,
 				E2A5DB7221A979CA00678A20 /* Resources */,
+				6DAE14D1F04D316D4F6A9DEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +211,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		41063D9A1DDF4E80F34BF9E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lauzhack18-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DAE14D1F04D316D4F6A9DEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Lauzhack18/Pods-Lauzhack18-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lauzhack18/Pods-Lauzhack18-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2A5DB7021A979CA00678A20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A5DB8F21A97C6300678A20 /* MergeDictionary.swift in Sources */,
 				E2A5DB7A21A979CA00678A20 /* ViewController.swift in Sources */,
+				E2A5DB9A21A997CA00678A20 /* IBMCloud.swift in Sources */,
+				E2A5DB8C21A97BD500678A20 /* ImageAPI.swift in Sources */,
+				E2A5DB9321A988D200678A20 /* Recipe.swift in Sources */,
 				E2A5DB7821A979CA00678A20 /* AppDelegate.swift in Sources */,
+				E2A5DB9121A97FA000678A20 /* RecipesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +409,7 @@
 		};
 		E2A5DB8721A979CB00678A20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DEA9A0B50E0455DBB2A1273 /* Pods-Lauzhack18.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +428,7 @@
 		};
 		E2A5DB8821A979CB00678A20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10145A3DF036C74094D1E3EE /* Pods-Lauzhack18.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
