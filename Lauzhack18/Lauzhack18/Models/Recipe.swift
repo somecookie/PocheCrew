@@ -17,3 +17,13 @@ struct Recipe: Codable{
     var title: String
     var ingredients: [Ingredient]
 }
+
+/*
+[
+    title: "",
+    ingredients: [
+        {ingredient: "blah"},
+        {ingredient: "blah"}
+                 ]
+]
+*/

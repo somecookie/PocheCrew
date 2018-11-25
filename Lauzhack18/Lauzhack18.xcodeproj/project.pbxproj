@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22BDA4221AA185F0055742E /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BDA4121AA185F0055742E /* RecipeCell.swift */; };
+		E22BDA4421AA32E10055742E /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BDA4321AA32E10055742E /* IngredientCell.swift */; };
 		E2A5DB7821A979CA00678A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB7721A979CA00678A20 /* AppDelegate.swift */; };
 		E2A5DB7A21A979CA00678A20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB7921A979CA00678A20 /* ViewController.swift */; };
 		E2A5DB7D21A979CA00678A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A5DB7B21A979CA00678A20 /* Main.storyboard */; };
@@ -16,7 +18,6 @@
 		E2A5DB8F21A97C6300678A20 /* MergeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB8E21A97C6300678A20 /* MergeDictionary.swift */; };
 		E2A5DB9121A97FA000678A20 /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB9021A97FA000678A20 /* RecipesTableViewController.swift */; };
 		E2A5DB9321A988D200678A20 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB9221A988D200678A20 /* Recipe.swift */; };
-		E2A5DB9A21A997CA00678A20 /* IBMCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB9921A997CA00678A20 /* IBMCloud.swift */; };
 		E8923FCAE2B3A433034E711D /* Pods_Lauzhack18.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24952CDBB3D3374635636BF5 /* Pods_Lauzhack18.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,8 @@
 		10145A3DF036C74094D1E3EE /* Pods-Lauzhack18.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lauzhack18.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lauzhack18/Pods-Lauzhack18.release.xcconfig"; sourceTree = "<group>"; };
 		1DEA9A0B50E0455DBB2A1273 /* Pods-Lauzhack18.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lauzhack18.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lauzhack18/Pods-Lauzhack18.debug.xcconfig"; sourceTree = "<group>"; };
 		24952CDBB3D3374635636BF5 /* Pods_Lauzhack18.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lauzhack18.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22BDA4121AA185F0055742E /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		E22BDA4321AA32E10055742E /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
 		E2A5DB7421A979CA00678A20 /* Lauzhack18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lauzhack18.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A5DB7721A979CA00678A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2A5DB7921A979CA00678A20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +38,6 @@
 		E2A5DB8E21A97C6300678A20 /* MergeDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeDictionary.swift; sourceTree = "<group>"; };
 		E2A5DB9021A97FA000678A20 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
 		E2A5DB9221A988D200678A20 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
-		E2A5DB9921A997CA00678A20 /* IBMCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMCloud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,8 @@
 			children = (
 				E2A5DB7921A979CA00678A20 /* ViewController.swift */,
 				E2A5DB9021A97FA000678A20 /* RecipesTableViewController.swift */,
+				E22BDA4121AA185F0055742E /* RecipeCell.swift */,
+				E22BDA4321AA32E10055742E /* IngredientCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				E2A5DB8B21A97BD500678A20 /* ImageAPI.swift */,
-				E2A5DB9921A997CA00678A20 /* IBMCloud.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -240,12 +243,14 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -259,10 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22BDA4421AA32E10055742E /* IngredientCell.swift in Sources */,
 				E2A5DB8F21A97C6300678A20 /* MergeDictionary.swift in Sources */,
 				E2A5DB7A21A979CA00678A20 /* ViewController.swift in Sources */,
-				E2A5DB9A21A997CA00678A20 /* IBMCloud.swift in Sources */,
 				E2A5DB8C21A97BD500678A20 /* ImageAPI.swift in Sources */,
+				E22BDA4221AA185F0055742E /* RecipeCell.swift in Sources */,
 				E2A5DB9321A988D200678A20 /* Recipe.swift in Sources */,
 				E2A5DB7821A979CA00678A20 /* AppDelegate.swift in Sources */,
 				E2A5DB9121A97FA000678A20 /* RecipesTableViewController.swift in Sources */,
@@ -415,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J9NB7Z3J5T;
 				INFOPLIST_FILE = Lauzhack18/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,6 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J9NB7Z3J5T;
 				INFOPLIST_FILE = Lauzhack18/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
