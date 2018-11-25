@@ -25,11 +25,12 @@ class Image_handler(SimpleHTTPRequestHandler):
             file.write(image_data)
 
         print("Image correctly received")
+        recipe = [{"title":"Anton à l'orange", "ingredients":["Anton", "orange"]}]
+        message = json.dumps(recipe)
+        
         self.protocol_version = 'HTTP/1.1'
         self.send_response(200)
         self.send_header("Content-type", 'text/html')
-        self.send_header("Content-length", 1)
+        self.send_header("Content-length", len(message))
         self.end_headers()
-        recipe = [{"title":"Anton à l'orange", "ingredients":["Anton", "orange"]}]
-        message = json.dumps(recipe) 
         self.wfile.write(bytes(message, 'utf-8'))
