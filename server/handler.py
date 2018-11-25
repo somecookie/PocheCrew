@@ -7,6 +7,7 @@ import binascii
 
 class Image_handler(SimpleHTTPRequestHandler):
     def do_POST(self):
+
         #get data from the post
         content_length = int(self.headers['Content-Length'])   
         post_data = self.rfile.read(content_length)
@@ -24,10 +25,11 @@ class Image_handler(SimpleHTTPRequestHandler):
             file.write(image_data)
 
         print("Image correctly received")
-    
-        #process image
+        self.protocol_version = 'HTTP/1.1'
+        self.send_response(200)
+        self.send_header("Content-type", 'text/html')
+        self.send_header("Content-length", 1)
+        self.end_headers()
         recipe = [{"title":"Anton à l'orange", "ingredients":["Anton", "orange"]}]
         message = json.dumps(recipe) 
         self.wfile.write(bytes(message, 'utf-8'))
-        print("LIONEL ES-TU LA?")
-
