@@ -12,13 +12,10 @@ class RecipesTableViewController: UITableViewController {
 
     var recipes = [Recipe]()
     let recipeCell = "recipe_cell"
+    var ingredients = [Ingredient]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 144.0
-        tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
     }
 
@@ -33,12 +30,22 @@ class RecipesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: recipeCell, for: indexPath) as! RecipeCell
-        let recipe = recipes[indexPath.row]
-        cell.title.text = recipe.title
-        cell.ingredients = recipe.ingredients
-        cell.tableView.dataSource = self
-        cell.tableView.delegate = self
-        
+        cell.title.text = recipes[indexPath.row].title
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ingredients" {
+            let destination = segue.destination as! IngredientsTableViewController
+            destination.ingredients = ingredients
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        ingredients = recipes[indexPath.row].ingredients
+        performSegue(withIdentifier: "ingredients", sender: self)
+    }
+    
+    
+    
 }

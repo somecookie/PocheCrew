@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E22BDA4221AA185F0055742E /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BDA4121AA185F0055742E /* RecipeCell.swift */; };
 		E22BDA4421AA32E10055742E /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BDA4321AA32E10055742E /* IngredientCell.swift */; };
+		E22BDA4621AA41F30055742E /* IngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BDA4521AA41F30055742E /* IngredientsTableViewController.swift */; };
 		E2A5DB7821A979CA00678A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB7721A979CA00678A20 /* AppDelegate.swift */; };
 		E2A5DB7A21A979CA00678A20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB7921A979CA00678A20 /* ViewController.swift */; };
 		E2A5DB7D21A979CA00678A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A5DB7B21A979CA00678A20 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		24952CDBB3D3374635636BF5 /* Pods_Lauzhack18.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lauzhack18.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22BDA4121AA185F0055742E /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		E22BDA4321AA32E10055742E /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
+		E22BDA4521AA41F30055742E /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
 		E2A5DB7421A979CA00678A20 /* Lauzhack18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lauzhack18.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A5DB7721A979CA00678A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2A5DB7921A979CA00678A20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				E2A5DB9021A97FA000678A20 /* RecipesTableViewController.swift */,
 				E22BDA4121AA185F0055742E /* RecipeCell.swift */,
 				E22BDA4321AA32E10055742E /* IngredientCell.swift */,
+				E22BDA4521AA41F30055742E /* IngredientsTableViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E22BDA4421AA32E10055742E /* IngredientCell.swift in Sources */,
+				E22BDA4621AA41F30055742E /* IngredientsTableViewController.swift in Sources */,
 				E2A5DB8F21A97C6300678A20 /* MergeDictionary.swift in Sources */,
 				E2A5DB7A21A979CA00678A20 /* ViewController.swift in Sources */,
 				E2A5DB8C21A97BD500678A20 /* ImageAPI.swift in Sources */,

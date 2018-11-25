@@ -114,63 +114,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipe_cell" rowHeight="295" id="pHI-rz-Maf" customClass="RecipeCell" customModule="Lauzhack18" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="295"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipe_cell" rowHeight="136" id="pHI-rz-Maf" customClass="RecipeCell" customModule="Lauzhack18" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="136"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pHI-rz-Maf" id="mpL-Ms-lTn">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="294.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of Recipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mx-jt-S6d">
-                                            <rect key="frame" x="24" y="19" width="327" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of Recipe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mx-jt-S6d">
+                                            <rect key="frame" x="24" y="27" width="327" height="82"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8pq-Lb-4F5">
-                                            <rect key="frame" x="8" y="47.5" width="359" height="239"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <prototypes>
-                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredient_cell" id="D1b-Rp-klz" customClass="IngredientCell" customModule="Lauzhack18" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="28" width="359" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D1b-Rp-klz" id="ohj-Op-1ii">
-                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="43.5"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQi-gg-O9p">
-                                                                <rect key="frame" x="16" y="16" width="327" height="11.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="OQi-gg-O9p" firstAttribute="top" secondItem="ohj-Op-1ii" secondAttribute="topMargin" constant="8" id="5KW-Ls-1KU"/>
-                                                            <constraint firstAttribute="trailingMargin" secondItem="OQi-gg-O9p" secondAttribute="trailing" constant="8" id="D2D-G6-OEE"/>
-                                                            <constraint firstItem="OQi-gg-O9p" firstAttribute="leading" secondItem="ohj-Op-1ii" secondAttribute="leadingMargin" constant="8" id="PKW-vQ-OOE"/>
-                                                            <constraint firstAttribute="bottomMargin" secondItem="OQi-gg-O9p" secondAttribute="bottom" constant="8" id="SRp-IS-Umk"/>
-                                                        </constraints>
-                                                    </tableViewCellContentView>
-                                                    <connections>
-                                                        <outlet property="nameIngredient" destination="OQi-gg-O9p" id="Kwh-ue-SX2"/>
-                                                    </connections>
-                                                </tableViewCell>
-                                            </prototypes>
-                                        </tableView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="8pq-Lb-4F5" secondAttribute="trailing" constant="8" id="Rgg-mP-ZIy"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="3Mx-jt-S6d" secondAttribute="trailing" constant="8" id="UV9-3X-3S8"/>
-                                        <constraint firstItem="8pq-Lb-4F5" firstAttribute="leading" secondItem="mpL-Ms-lTn" secondAttribute="leading" constant="8" id="ipY-fP-b3y"/>
-                                        <constraint firstItem="3Mx-jt-S6d" firstAttribute="top" secondItem="mpL-Ms-lTn" secondAttribute="topMargin" constant="8" id="kGy-mK-EIM"/>
-                                        <constraint firstAttribute="bottom" secondItem="8pq-Lb-4F5" secondAttribute="bottom" constant="8" id="mgp-G3-ix0"/>
-                                        <constraint firstItem="3Mx-jt-S6d" firstAttribute="leading" secondItem="mpL-Ms-lTn" secondAttribute="leadingMargin" constant="8" id="nJk-W8-mgc"/>
-                                        <constraint firstItem="8pq-Lb-4F5" firstAttribute="top" secondItem="3Mx-jt-S6d" secondAttribute="bottom" constant="8" id="vET-A9-ilL"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="3Mx-jt-S6d" secondAttribute="bottom" constant="16" id="0H1-7I-wTY"/>
+                                        <constraint firstItem="3Mx-jt-S6d" firstAttribute="leading" secondItem="mpL-Ms-lTn" secondAttribute="leadingMargin" constant="8" id="bAk-nN-Jtc"/>
+                                        <constraint firstItem="3Mx-jt-S6d" firstAttribute="top" secondItem="mpL-Ms-lTn" secondAttribute="topMargin" constant="16" id="oLF-JO-fgd"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="3Mx-jt-S6d" secondAttribute="trailing" constant="8" id="xe4-Yo-F7h"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="tableView" destination="8pq-Lb-4F5" id="KSb-pM-HHT"/>
                                     <outlet property="title" destination="3Mx-jt-S6d" id="0CV-Qh-gsw"/>
                                 </connections>
                             </tableViewCell>
@@ -180,10 +145,58 @@
                             <outlet property="delegate" destination="3U1-XF-OSW" id="GgH-nZ-W5o"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="5gs-aV-h4K" kind="show" identifier="ingredients" id="IYR-ux-Usc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AW7-Xb-ie7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1906.4000000000001" y="4.9475262368815596"/>
+        </scene>
+        <!--Ingredients Table View Controller-->
+        <scene sceneID="xug-JI-TAw">
+            <objects>
+                <tableViewController id="5gs-aV-h4K" customClass="IngredientsTableViewController" customModule="Lauzhack18" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="foG-ty-7Sp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredient_cell" rowHeight="102" id="fXF-2f-U5C" customClass="IngredientCell" customModule="Lauzhack18" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="102"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fXF-2f-U5C" id="1uh-Qg-bsx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbY-2g-xEk">
+                                            <rect key="frame" x="24" y="27" width="327" height="48"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="EbY-2g-xEk" firstAttribute="leading" secondItem="1uh-Qg-bsx" secondAttribute="leadingMargin" constant="8" id="GoS-vJ-z5q"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="EbY-2g-xEk" secondAttribute="bottom" constant="16" id="MWl-XA-h0f"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="EbY-2g-xEk" secondAttribute="trailing" constant="8" id="O9I-si-Llm"/>
+                                        <constraint firstItem="EbY-2g-xEk" firstAttribute="top" secondItem="1uh-Qg-bsx" secondAttribute="topMargin" constant="16" id="tKH-tb-Apo"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name_ingredient" destination="EbY-2g-xEk" id="6mm-ZF-784"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5gs-aV-h4K" id="nIi-oB-bzf"/>
+                            <outlet property="delegate" destination="5gs-aV-h4K" id="NKH-XI-dz7"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDq-vH-sJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2640.8000000000002" y="-3.1484257871064472"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KAy-45-O92">
